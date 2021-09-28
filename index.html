@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Simulator TA</title>
+  </head>
+  <body>
+
+    <div class="calculTA">
+      <h1><u>Simulateur Taxe Apprentissage</u></h1>
+        <div>
+
+            <p class="masseSalarialeTitle">Masse Salariale <input id="masseSalariale" type="number" /></p>
+            
+            <p class="alsaceTitle">
+                Mon entreprise se situe en Alsace-Moselle **:
+                <input type="checkbox" value="0.68"  id="alsaceValue" onclick="changeValue()" />
+            </p>
+            
+        </div>
+
+      <p class="taxeTitle">Taxe apprentissage : <span id="resultatTA"></span></p>
+
+      <p class="soldeTitle">Solde à attribuer (13%) : <span id="resultatSolde"></span></p>
+
+      <p class="financementTitle">Financement de l’apprentissage (87%) : <span id="resultatFinancement"></span></p>
+      
+      <p><button type="submit" onclick="calculer()">Calculer</button></p>
+      <hr />
+      ** Cette année, la taxe d’apprentissage sera toujours égale à 0.68% de la
+      Masse Salariale (ou 0.44% en Alsace-Moselle).
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
