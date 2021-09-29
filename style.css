@@ -1,9 +1,12 @@
 .calculTA {
-    background-color: #5bacc6;
-    margin-top: 61px;
-    padding-top: 41px;
-    padding-left: 78px;
+    background-color: #F9F9F9;
+    margin: 5%;
+    padding: 5%;
     border-radius: 13px;
-    max-width: 732px;
-    padding-bottom: 57px;
-}; 
+    box-shadow: #111111 0px 2px 8px;
+    color: #111111
+};
+
+span > #resultatSolde, #resultatFinancement, #resultatTA {
+    font-weight: 800;
+}
