@@ -21,13 +21,13 @@
         <div class="row" style="margin-top: 5%">
           <div class="col-md-12 col-lg-6">
             <p class="titleSimulator">
-              Masse Salariale <input id="masseSalariale" type="number" />
+              Masse Salariale <input id="masseSalariale" type="number" onkeyup="mykeyUp()" />
             </p>
           </div>
 
           <div class="col-md-12 col-lg-6">
             <p class="titleSimulator">
-              Taxe apprentissage : <span style="font-weight: 650;" id="resultatTA"></span>
+              Taxe apprentissage : <span style="font-weight: 650;" id="resultatTA"> 0 €</span>
             </p>
           </div>
         </div>
@@ -43,14 +43,14 @@
         <div class="row" style="margin-top: 5%">
           <div class="col-6">
             <p class="titleSimulator">
-              Solde à attribuer (13%) : <span style="font-weight: 650;" id="resultatSolde"></span>
+              Solde à attribuer (13%) : <span style="font-weight: 650;" id="resultatSolde"> 0 €</span>
             </p>
           </div>
 
           <div class="col-6">
             <p class="titleSimulator">
               Financement de l’apprentissage (87%) :
-              <span style="font-weight: 650;" id="resultatFinancement"></span>
+              <span style="font-weight: 650;" id="resultatFinancement"> 0 €</span>
             </p>
           </div>
         </div>
