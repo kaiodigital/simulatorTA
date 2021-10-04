@@ -21,18 +21,21 @@
         <div class="row" style="margin-top: 5%">
           <div class="col-md-12 col-lg-6">
             <p class="titleSimulator">
-              Masse Salariale <input id="masseSalariale" type="number" onkeyup="mykeyUp()" />
+              Masse Salariale
+              <input id="masseSalariale" type="number" min="0" inputmode="numeric" pattern="[0-9]*" onkeyup="mykeyUp()" />
             </p>
           </div>
 
           <div class="col-md-12 col-lg-6">
             <p class="titleSimulator">
-              Taxe apprentissage : <span style="font-weight: 650;" id="resultatTA"> 0 €</span>
+              Taxe apprentissage :
+              <span style="font-weight: 650" id="resultatTA"> 0 €</span>
             </p>
           </div>
         </div>
-        <p class="titleSimulator" style="font-size: smaller;">
-          Mon entreprise se situe en Alsace-Moselle <span style="color: red;">**</span>:
+        <p class="titleSimulator" style="font-size: smaller">
+          Mon entreprise se situe en Alsace-Moselle
+          <span style="color: red">**</span>:
           <input
             type="checkbox"
             value="0.0068"
@@ -43,14 +46,17 @@
         <div class="row" style="margin-top: 5%">
           <div class="col-6">
             <p class="titleSimulator">
-              Solde à attribuer (13%) : <span style="font-weight: 650;" id="resultatSolde"> 0 €</span>
+              Solde à attribuer (13%) :
+              <span style="font-weight: 650" id="resultatSolde"> 0 €</span>
             </p>
           </div>
 
           <div class="col-6">
             <p class="titleSimulator">
               Financement de l’apprentissage (87%) :
-              <span style="font-weight: 650;" id="resultatFinancement"> 0 €</span>
+              <span style="font-weight: 650" id="resultatFinancement">
+                0 €</span
+              >
             </p>
           </div>
         </div>
@@ -61,10 +67,13 @@
           </button>
         </p>
         <hr />
-        <p style="font-size: smaller;"><span style="color: red;">**</span> Cette année, la taxe d’apprentissage sera toujours égale à 0.68% de la
-        Masse Salariale (ou 0.44% en Alsace-Moselle).</p>
+        <p style="font-size: smaller">
+          <span style="color: red">**</span> Cette année, la taxe
+          d’apprentissage sera toujours égale à 0.68% de la Masse Salariale (ou
+          0.44% en Alsace-Moselle).
+        </p>
       </div>
-      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
